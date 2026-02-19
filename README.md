@@ -6,23 +6,11 @@ All data in this project is synthetic and created for portfolio demonstration pu
 
 # Repository Structure: 
 
-environmental-impact-dashboard/
-│
-├── notebooks/
-│ ├── Data_2023.ipynb
-│ ├── Data_2024.ipynb
-│ ├── Data_2025.ipynb
-│ └── Stacked_env_data.ipynb
-│
-├── data/
-│ ├── raw/
-│ └── cleaned/
-│
-├── compliance/
-│ ├── Compliance_table.ipynb
-│ └── compliance_review.csv
-│
-└── README.md
+Environmental-impact-dashboard |- 
+Notebooks |- Data_2023.ipynb, Data_2024.ipynb, Data_2025.ipynb, Stacked_env_data.ipynb
+Data |- raw/cleaned. 
+Compliance |-  Compliance_table.ipynb, compliance_review.csv
+README.md
 
 
 # Project overview: 
