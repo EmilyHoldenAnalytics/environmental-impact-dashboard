@@ -1,4 +1,56 @@
+## Workflow Summary
+
+### 1. Year-Level Cleaning
 Each annual dataset (2023, 2024, 2025) is cleaned in a dedicated notebook:
 - Standardised column names and data types
 - Corrected malformed decimals and missing values
 - Generated boolean "_recorded" fields for completeness tracking
+
+### 2. Data Quality Validation
+- Verified schema consistency across all years
+- Checked for duplicate Site–Year–Month records
+- Validated month ranges (1–12)
+- Confirmed full site coverage per year
+
+### 3. Multi-Year Stacking
+- Concatenated all cleaned datasets
+- Sorted logically by Year → Month → Site
+- Generated a surrogate primary key (`env_id`)
+- Exported SQL-ready dataset:
+  - `right_environmental_data_2023_2025_final.csv`
+  - `right_environmental_data_2023_2025_final.pkl`
+
+### 4. Compliance & Review Logic
+A compliance review framework was built to classify risk levels:
+
+- Data completeness thresholds (<50% = Red, <80% = Amber)
+- Compliance score bands
+- Environmental incident flags
+- Statistical variation detection (|z| ≥ 2)
+- Automated review notes
+- Follow-up required flag
+
+Final output:
+- `compliance_review.csv`
+
+## Technologies Used
+
+- Python
+- pandas
+- NumPy
+- Jupyter Notebook
+- GitHub
+- SQL Server (target integration)
+
+## Design Principles
+
+- Reproducible and modular structure
+- Clear separation between raw, cleaned, and final outputs
+- Audit-traceable transformation logic
+- SQL-ready export design
+- Portfolio-quality documentation
+
+## Author
+
+Emily Holden  
+Environmental Data & Analytics Portfolio Project
