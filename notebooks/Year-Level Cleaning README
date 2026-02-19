@@ -1,0 +1,4 @@
+Each annual dataset (2023, 2024, 2025) is cleaned in a dedicated notebook:
+- Standardised column names and data types
+- Corrected malformed decimals and missing values
+- Generated boolean "_recorded" fields for completeness tracking
