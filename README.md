@@ -8,9 +8,9 @@ All data in this project is synthetic and created for portfolio demonstration pu
 
 Environmental-impact-dashboard |- 
 Notebooks |- Data_2023.ipynb, Data_2024.ipynb, Data_2025.ipynb, Stacked_env_data.ipynb
-Data |- raw/cleaned. 
-Compliance |-  Compliance_table.ipynb, compliance_review.csv
-README.md
+| Data |- raw/cleaned. 
+| Compliance |-  Compliance_table.ipynb, compliance_review.csv
+| README.md
 
 
 # Project overview: 
